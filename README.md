@@ -11,3 +11,12 @@ Additional repos can be found here:
 We encourage any developer to help us out with issues and pull requests.
 
 If you want to learn more about SpaceBukkit, head over to the [website](http://spacebukkit.xereo.net).
+
+## Main Goals with this repo
+
+	* Speed up pageload and dataload
+		* By moving most of the "setup" load to login
+		* By using better api methods
+		* By cleaning up most internal methods
+	* Rewrite the login process
+	* Fix Sqlite
