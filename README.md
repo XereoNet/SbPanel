@@ -6,7 +6,7 @@ This repo contains the PHP web files for the project.
 Additional repos can be found here:
 [SbPlugin](https://github.com/Antariano/SbPlugin),
 [SbRTK](https://github.com/Antariano/SbRTK),
-[SbModule](https://github.com/Antariano/SbModule) r
+[SbModule](https://github.com/Antariano/SbModule)
 
 We encourage any developer to help us out with issues and pull requests.
 
