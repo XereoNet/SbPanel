@@ -1,0 +1,12 @@
+Copyright 2012 SpaceDev team (SpaceBukkit and SpaceCP development team)
+
+SpaceBukkit Panel by SpaceBukkit is licensed under a 
+Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License (THE LICENSE).
+http://creativecommons.org/licenses/by-nc-sa/3.0/
+
+Permissions beyond the scope of this license may be available on request at lucarager@gmail.com
+(For example for the product to be used in a commercial scenario)
+
+CakePHP is licensed under
+the MIT License
+(for more information read /lib/cake/LICENSE.txt)

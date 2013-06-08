@@ -3,7 +3,7 @@
 /**
  * This file is loaded automatically by the app/webroot/index.php file after core.php
  *
- * This file should load/create any application wide configuration settings, such as 
+ * This file should load/create any application wide configuration settings, such as
  * Caching, Logging, loading additional configuration files.
  *
  * You should also use this file to include any files that provide global functions/constants
@@ -30,25 +30,25 @@ Cache::config('default', array('engine' => 'File'));
 
 Configure::write('Spacebukkit.theme', "Spacebukkit");
 
-App::import('Vendor', 'serverlog'); 
+App::import('Vendor', 'serverlog');
 
 function perm($node, $perm, $user_perm, $message=false) {
 
 	require APP.'webroot/configuration.php';
 
-	if (($user_perm[$node] & $permissions[$node][$perm]) || ($user_perm['is_super'] == 1)) 
+	if (($user_perm[$node] & $permissions[$node][$perm]) || ($user_perm['is_super'] == 1))
 	{
 		return true;
 	}
-	else 
+	else
 	{
 		if ($message) {
 			exit('Permission denied - you are not allowed to be here!');
 		}
 		else {
-		return false;	
+		return false;
 		}
-		
+
 	}
 
 }
@@ -57,17 +57,17 @@ function perm_action($node, $perm, $user_perm, $value=null) {
 
 	require APP.'webroot/configuration.php';
 
-	if (($user_perm[$node] & $permissions[$node][$perm]) || ($user_perm['is_super'] == 1)) 
+	if (($user_perm[$node] & $permissions[$node][$perm]) || ($user_perm['is_super'] == 1))
 	{
 
 		return $value;
 
 	}
-	else 
+	else
 	{
-		
-		return false;	
-		
+
+		return false;
+
 	}
 
 }
@@ -75,14 +75,15 @@ function perm_action($node, $perm, $user_perm, $value=null) {
 /* LOAD SPACEBUKKIT CONFIGURATION */
 
 require APP . 'webroot/system.php';
+require APP . 'webroot/configuration.php';
 
 Configure::write('debug', $system[0]['val']);
 
 Configure::write('Cache.disable',  $system[1]['val']);
 
-Configure::write('Security.salt',  "Oijasfdj544dsASd44dsh9a9sdASdgjyky8455s1as8w789q");
+Configure::write('Security.salt', $sbconf['salt']);
 
-Configure::write('Security.cipherSeed',  "3196725290708910560802715405054");
+Configure::write('Security.cipherSeed',  $sbconf['cypher']);
 
 date_default_timezone_set( $system[2]['val']);
 
