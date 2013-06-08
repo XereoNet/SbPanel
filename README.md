@@ -14,15 +14,15 @@ If you want to learn more about SpaceBukkit, head over to the [website](http://s
 
 ## Main Goals with this repo
 
-    * [ ] Speed up pageload and dataload
-        * [ ] By moving most of the "setup" load to login
-        * [ ] By using better api methods
-        * [ ] By cleaning up most internal methods
-    * [ ] Rewrite the login process
-    * [ ] Fix Sqlite
-    * [ ] Enhance Security
-      * [ ] Change to sha-256 from sha-1
-      * [X] Fix other security issues (namely salting and crypting)
+ * [ ] Speed up pageload and dataload
+     * [ ] By moving most of the "setup" load to login
+     * [ ] By using better api methods
+     * [ ] By cleaning up most internal methods
+ * [ ] Rewrite the login process
+ * [ ] Fix Sqlite
+ * [ ] Enhance Security
+   * [ ] Change to sha-256 from sha-1
+   * [X] Fix other security issues (namely salting and crypting)
 
 ## Credits
  * [Antariano](https://github.com/Antariano/) & [JamyDev](https://github.com/JamyDev/) - Web.
