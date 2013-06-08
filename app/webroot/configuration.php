@@ -22,9 +22,9 @@
 	$sbconf['app_version'] = "Open Beta 1.2 WIP";
     $sbconf['app'] = "2";
     $sbconf['theme'] = "Spacebukkit";
-    $sbconf['token'] = "0ee1d2a209eb1004370023d71326e68a";
-    $sbconf['salt'] = "74991997606876005455864099186395";
-    $sbconf['cypher'] = "71703989614498433280729696808053";
+    $sbconf['token'] = "%*TOKEN*%";
+    $sbconf['salt'] = "%*SALT*%";
+    $sbconf['cypher'] = "%*CYPHER*%";
 
     $languages = array();
 
